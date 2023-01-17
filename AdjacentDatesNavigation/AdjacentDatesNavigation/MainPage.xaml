@@ -9,11 +9,7 @@
         <local:CalendarBehavior />
     </ContentPage.Behaviors>
     <ContentPage.Content>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="0.1*" />
-                <RowDefinition Height="0.9*" />
-            </Grid.RowDefinitions>
+        <Grid RowDefinitions="0.1*, 0.9*">
             <Button x:Name="NavigateButton"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
