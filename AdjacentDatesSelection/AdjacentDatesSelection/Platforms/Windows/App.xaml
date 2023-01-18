@@ -1,8 +1,8 @@
 ﻿<maui:MauiWinUIApplication
-    x:Class="AdjacentDatesNavigation.WinUI.App"
+    x:Class="AdjacentDatesSelection.WinUI.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:maui="using:Microsoft.Maui"
-    xmlns:local="using:AdjacentDatesNavigation.WinUI">
+    xmlns:local="using:AdjacentDatesSelection.WinUI">
 
 </maui:MauiWinUIApplication>

@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace AdjacentDatesNavigation;
+namespace AdjacentDatesSelection;
 
 public class Program
 {

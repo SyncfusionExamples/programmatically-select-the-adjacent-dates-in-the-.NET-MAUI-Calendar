@@ -1,4 +1,4 @@
-﻿namespace AdjacentDatesNavigation;
+﻿namespace AdjacentDatesSelection;
 
 public partial class App : Application
 {

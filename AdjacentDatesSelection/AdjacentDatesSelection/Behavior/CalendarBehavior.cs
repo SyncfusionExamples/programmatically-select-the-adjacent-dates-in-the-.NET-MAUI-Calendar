@@ -1,12 +1,12 @@
 ﻿using Syncfusion.Maui.Calendar;
 
-namespace AdjacentDatesNavigation
+namespace AdjacentDatesSelection
 {
     public class CalendarBehavior : Behavior<ContentPage>
     {
         private SfCalendar sfCalendar;
-        private Button button;
-        
+        private Button backwardButton, forwardButton;
+
         protected override void OnAttachedTo(ContentPage bindable)
         {
             base.OnAttachedTo(bindable);
@@ -17,8 +17,10 @@ namespace AdjacentDatesNavigation
             }
 
             this.sfCalendar.SelectionChanged += SfCalendar_SelectionChanged;
-            this.button = bindable.FindByName<Button>("NavigateButton");
-            this.button.Clicked += Button_Clicked;
+            this.backwardButton = bindable.FindByName<Button>("BackwardSelectButton");
+            this.backwardButton.Clicked += BackwardButton_Clicked;
+            this.forwardButton = bindable.FindByName<Button>("ForwardSelectButton");
+            this.forwardButton.Clicked += ForwardButton_Clicked;
         }
 
         private void SfCalendar_SelectionChanged(object sender, CalendarSelectionChangedEventArgs e)
@@ -30,14 +32,21 @@ namespace AdjacentDatesNavigation
             }
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void BackwardButton_Clicked(object sender, EventArgs e)
+        {
+            if (this.sfCalendar.SelectedDate != null)
+            {
+                this.sfCalendar.SelectedDate = this.sfCalendar.SelectedDate.Value.AddDays(-1);
+            }
+        }
+
+        private void ForwardButton_Clicked(object sender, EventArgs e)
         {
             if (this.sfCalendar.SelectedDate != null)
             {
                 this.sfCalendar.SelectedDate = this.sfCalendar.SelectedDate.Value.AddDays(1);
             }
         }
-            
 
         protected override void OnDetachingFrom(ContentPage bindable)
         {
@@ -47,13 +56,19 @@ namespace AdjacentDatesNavigation
                 this.sfCalendar.SelectionChanged -= SfCalendar_SelectionChanged;
             }
 
-            if (this.button != null)
+            if (this.backwardButton != null)
             {
-                this.button.Clicked -= Button_Clicked;
+                this.backwardButton.Clicked -= BackwardButton_Clicked;
+            }
+
+            if (this.forwardButton != null)
+            {
+                this.forwardButton.Clicked -= ForwardButton_Clicked;
             }
 
             this.sfCalendar = null;
-            this.button = null;
+            this.backwardButton = null;
+            this.forwardButton = null;
         }
     }
 }

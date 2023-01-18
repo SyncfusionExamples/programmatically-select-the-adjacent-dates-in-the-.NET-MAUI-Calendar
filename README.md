@@ -1,5 +1,5 @@
-# How to programmatically navigate to the adjacent dates in the .NET MAUI Calendar (SfCalendar)
-This repository contains a sample to programmatically navigate to the adjacent dates in the [Syncfusion .NET MAUI Calendar](https://help.syncfusion.com/maui/calendar/getting-started) control.
+# How to programmatically select the adjacent dates in the .NET MAUI Calendar (SfCalendar)
+This repository contains a sample to programmatically select the adjacent dates in the [Syncfusion .NET MAUI Calendar](https://help.syncfusion.com/maui/calendar/getting-started) control.
 
 Please refer the KB through this link.
 
