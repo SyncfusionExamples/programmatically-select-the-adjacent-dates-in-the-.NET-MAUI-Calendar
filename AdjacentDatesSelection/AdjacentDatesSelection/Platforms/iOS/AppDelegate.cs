@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace AdjacentDatesNavigation;
+namespace AdjacentDatesSelection;
 
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate

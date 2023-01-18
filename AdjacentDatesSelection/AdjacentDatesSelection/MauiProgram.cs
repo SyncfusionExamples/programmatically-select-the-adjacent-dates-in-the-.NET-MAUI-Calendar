@@ -1,6 +1,6 @@
 ﻿using Syncfusion.Maui.Core.Hosting;
 
-namespace AdjacentDatesNavigation;
+namespace AdjacentDatesSelection;
 
 public static class MauiProgram
 {
