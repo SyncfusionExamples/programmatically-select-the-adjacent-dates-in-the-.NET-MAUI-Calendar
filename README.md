@@ -1,13 +1,13 @@
 # How to Select Adjacent Dates Programmatically in the .NET MAUI Calendar (SfCalendar)
 
-This repository contains a sample to programmatically select the adjacent dates in the [Syncfusion .NET MAUI Calendar](https://help.syncfusion.com/maui/calendar/getting-started) control.
+This repository contains a sample to programmatically select the adjacent dates in the [SfCalendar](https://help.syncfusion.com/maui/calendar/getting-started) control.
 
 Please refer the KB through this [link](https://www.syncfusion.com/kb/13834/how-to-select-adjacent-dates-programmatically-in-the-net-maui-calendar-sfcalendar).
 
 ## Syncfusion controls
 
 This project used the following Syncfusion control(s):
-* [SfCalendar](https://www.syncfusion.com/maui-controls/maui-calendar)
+* [Syncfusion .NET MAUI Calendar](https://www.syncfusion.com/maui-controls/maui-calendar)
 
 ## Supported platforms
 
